@@ -4,14 +4,15 @@
     <generated>
       <config projectName="jansson" targetName="test_load" />
       <config projectName="jansson" targetName="simple_parse" />
-      <config projectName="jansson" targetName="test_loadb" />
       <config projectName="jansson" targetName="test_number" />
+      <config projectName="jansson" targetName="test_loadb" />
       <config projectName="jansson" targetName="test_simple" />
       <config projectName="jansson" targetName="test_equal" />
       <config projectName="jansson" targetName="test_memory_funcs" />
       <config projectName="jansson" targetName="check" />
       <config projectName="jansson" targetName="test_pack" />
       <config projectName="jansson" targetName="test_dump" />
+      <config projectName="ArduinoJson" targetName="src" />
       <config projectName="jansson" targetName="test_array" />
       <config projectName="jansson" targetName="test_copy" />
       <config projectName="jansson" targetName="jansson" />
@@ -27,7 +28,325 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecdd3bc5-d293-4f6f-ad9b-e4825bd29e48" name="Default" comment="" />
+    <list default="true" id="ecdd3bc5-d293-4f6f-ad9b-e4825bd29e48" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/jansson_config.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake/CheckFunctionKeywords.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake/CodeCoverage.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake/Coveralls.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake/CoverallsClear.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake/CoverallsGenerateGcov.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake/FindSphinx.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake/JanssonConfig.cmake.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake/JanssonConfigVersion.cmake.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake/jansson_config.h.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake/jansson_private_config.h.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/apiref.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/changes.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/conf.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/conformance.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/ext/refcounting.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/gettingstarted.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/github_commits.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/portability.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/tutorial.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/upgrading.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/README.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/bin/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/bin/json_process.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/run-suites" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/scripts/run-tests.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/scripts/valgrind.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/check-exports" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/run" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_array.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_copy.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_dump.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_dump_callback.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_equal.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_load.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_load_callback.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_loadb.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_memory_funcs.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_number.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_object.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_pack.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_simple.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/test_unpack.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/api/util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/array/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/compact-array/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/compact-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/compact-array/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/compact-object/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/compact-object/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/compact-object/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/ensure-ascii/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/ensure-ascii/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/ensure-ascii/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-array/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-array/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-compact-array/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-compact-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-compact-array/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-compact-object/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-compact-object/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-compact-object/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-object/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-object/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/indent-object/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/object/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/object/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/object/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/preserve-order/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/preserve-order/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/preserve-order/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/real-precision/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/real-precision/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/real-precision/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/run" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/sort-keys/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/sort-keys/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/encoding-flags/sort-keys/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/encoded-surrogate-half/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/encoded-surrogate-half/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-after-backslash/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-after-backslash/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-array/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-bigger-int/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-bigger-int/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-escape/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-escape/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-exponent/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-exponent/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-identifier/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-identifier/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-int/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-int/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-real-after-e/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-real-after-e/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-string/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/invalid-utf-8-in-string/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/lone-invalid-utf-8/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/lone-invalid-utf-8/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/lone-utf-8-continuation-byte/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/lone-utf-8-continuation-byte/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/not-in-unicode-range/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/not-in-unicode-range/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/overlong-3-byte-encoding/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/overlong-3-byte-encoding/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/overlong-4-byte-encoding/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/overlong-4-byte-encoding/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/overlong-ascii-encoding/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/overlong-ascii-encoding/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/restricted-utf-8/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/restricted-utf-8/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/run" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/truncated-utf-8/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid-unicode/truncated-utf-8/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/apostrophe/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/apostrophe/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/ascii-unicode-identifier/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/ascii-unicode-identifier/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/brace-comma/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/brace-comma/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/bracket-comma/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/bracket-comma/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/bracket-one-comma/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/bracket-one-comma/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/bracket-one-comma/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/empty/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/empty/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/extra-comma-in-array/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/extra-comma-in-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/extra-comma-in-multiline-array/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/extra-comma-in-multiline-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/garbage-after-newline/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/garbage-after-newline/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/garbage-at-the-end/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/garbage-at-the-end/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/integer-starting-with-zero/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/integer-starting-with-zero/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-escape/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-escape/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-identifier/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-identifier/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-negative-integer/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-negative-integer/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-negative-real/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-negative-real/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-second-surrogate/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-second-surrogate/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-unicode-escape/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/invalid-unicode-escape/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/lone-open-brace/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/lone-open-brace/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/lone-open-brace/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/lone-open-bracket/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/lone-open-bracket/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/lone-open-bracket/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/lone-second-surrogate/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/lone-second-surrogate/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/minus-sign-without-number/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/minus-sign-without-number/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/negative-integer-starting-with-zero/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/negative-integer-starting-with-zero/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null-byte-in-object-key/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null-byte-in-object-key/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null-byte-in-string/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null-byte-in-string/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null-byte-in-string/nostrip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null-byte-outside-string/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null-byte-outside-string/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null-byte-outside-string/nostrip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null-escape-in-string/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null-escape-in-string/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/null/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-apostrophes/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-apostrophes/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-garbage-at-end/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-garbage-at-end/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-in-unterminated-array/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-in-unterminated-array/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-in-unterminated-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-no-colon/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-no-colon/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-no-colon/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-no-value/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-no-value/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-no-value/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-unterminated-value/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-unterminated-value/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/object-unterminated-value/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/real-garbage-after-e/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/real-garbage-after-e/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/real-negative-overflow/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/real-negative-overflow/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/real-positive-overflow/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/real-positive-overflow/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/real-truncated-at-e/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/real-truncated-at-e/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/real-truncated-at-point/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/real-truncated-at-point/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/recursion-depth/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/recursion-depth/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/run" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/tab-character-in-string/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/tab-character-in-string/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/too-big-negative-integer/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/too-big-negative-integer/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/too-big-positive-integer/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/too-big-positive-integer/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/truncated-unicode-surrogate/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/truncated-unicode-surrogate/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unicode-identifier/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unicode-identifier/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-array-and-object/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-array-and-object/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-array-and-object/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-array/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-array/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-empty-key/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-empty-key/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-empty-key/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-key/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-key/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-key/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-object-and-array/error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-object-and-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-string/error.normal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-string/error.strip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/invalid/unterminated-string/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/complex-array/env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/complex-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/complex-array/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/empty-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/empty-array/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/empty-object-in-array/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/empty-object-in-array/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/empty-object/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/empty-object/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/empty-string/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/empty-string/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/escaped-utf-control-char/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/escaped-utf-control-char/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/false/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/false/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/negative-int/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/negative-int/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/negative-one/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/negative-one/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/negative-zero/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/negative-zero/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/null/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/null/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/one-byte-utf-8/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/one-byte-utf-8/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-capital-e-negative-exponent/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-capital-e-negative-exponent/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-capital-e-positive-exponent/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-capital-e-positive-exponent/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-capital-e/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-capital-e/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-exponent/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-exponent/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-fraction-exponent/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-fraction-exponent/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-negative-exponent/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-negative-exponent/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-positive-exponent/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-positive-exponent/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-subnormal-number/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-subnormal-number/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-underflow/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/real-underflow/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/run" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/short-string/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/short-string/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-ascii-string/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-ascii-string/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-int-0/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-int-0/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-int-1/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-int-1/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-int-123/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-int-123/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-object/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-object/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-real/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/simple-real/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/string-escapes/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/string-escapes/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/three-byte-utf-8/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/three-byte-utf-8/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/true/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/true/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/two-byte-utf-8/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/two-byte-utf-8/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/utf-8-string/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/utf-8-string/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/utf-surrogate-four-byte-encoding/input" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/suites/valid/utf-surrogate-four-byte-encoding/output" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/simple_parse.c" afterPath="$PROJECT_DIR$/src/simple_parse.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jansson-2.10.iml" afterPath="$PROJECT_DIR$/.idea/jansson-2.10.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hashtable.c" afterPath="$PROJECT_DIR$/src/hashtable.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jansson_private.h" afterPath="$PROJECT_DIR$/src/jansson_private.h" />
+    </list>
     <ignored path="jansson-2.10.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,22 +365,32 @@
     <favorites_list name="jansson-2.10" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simple_parse.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/examples/simple_parse.c">
+      <file leaf-file-name="hashtable.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hashtable.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="227" column="26" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
+            <state relative-caret-position="166">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple_parse.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/simple_parse.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-945">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
                 <element signature="e#635#653#0" expanded="true" />
               </folding>
@@ -69,22 +398,90 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tutorial.rst" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/tutorial.rst">
+      <file leaf-file-name="jansson_private.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jansson_private.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-219">
-              <caret line="209" column="8" selection-start-line="209" selection-start-column="8" selection-end-line="215" selection-end-column="9" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#258#277#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utf.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/utf.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jansson.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jansson.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="96" column="12" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+              <folding>
+                <element signature="e#242#260#0" expanded="true" />
+                <marker date="1488440982000" expanded="false" signature="1242:1367" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dump.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dump.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="e#253#281#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/error.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-537">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jansson_config.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jansson_config.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#803#829#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/examples/simple_parse.c" />
+        <option value="$PROJECT_DIR$/src/simple_parse.c" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/hashtable.c" />
+        <option value="$PROJECT_DIR$/src/jansson_private.h" />
       </list>
     </option>
   </component>
@@ -152,35 +549,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jansson-2.10" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jansson-2.10" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jansson-2.10" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jansson-2.10" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -191,10 +560,167 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="Application.simple_parse">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.src">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jansson" TARGET_NAME="check" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jansson" TARGET_NAME="check" CONFIG_NAME="Debug">
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jansson-2.10" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jansson-2.10" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jansson-2.10" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jansson-2.10" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jansson-2.10" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jansson-2.10" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jansson-2.10" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
@@ -269,7 +795,11 @@
       <envs />
       <method />
     </configuration>
-    <list size="18">
+    <configuration default="false" name="src" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ArduinoJson" TARGET_NAME="src" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ArduinoJson" RUN_TARGET_NAME="src">
+      <envs />
+      <method />
+    </configuration>
+    <list size="19">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.check" />
       <item index="2" class="java.lang.String" itemvalue="Application.jansson" />
@@ -288,6 +818,7 @@
       <item index="15" class="java.lang.String" itemvalue="Application.test_pack" />
       <item index="16" class="java.lang.String" itemvalue="Application.test_simple" />
       <item index="17" class="java.lang.String" itemvalue="Application.test_unpack" />
+      <item index="18" class="java.lang.String" itemvalue="Application.src" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -304,26 +835,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="23" width="1382" height="877" extended-state="0" />
+    <frame x="58" y="23" width="1382" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24981631" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909784" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -345,29 +876,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/CLion2016.1/cmake/generated/jansson-2_10-f7709973/f7709973/Debug/include/jansson.h">
+    <entry file="file://$PROJECT_DIR$/src/simple_parse.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#635#653#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/tutorial.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
+        <state relative-caret-position="3135">
           <caret line="209" column="8" selection-start-line="209" selection-start-column="8" selection-end-line="215" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/simple_parse.c">
+    <entry file="file://$USER_HOME$/Library/Caches/CLion2016.1/cmake/generated/jansson-2_10-f7709973/f7709973/Debug/include/jansson.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="227" column="26" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
+        <state relative-caret-position="720">
+          <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/tutorial.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3135">
+          <caret line="209" column="8" selection-start-line="209" selection-start-column="8" selection-end-line="215" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jansson_config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#803#829#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/error.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-537">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jansson.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="96" column="12" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+          <folding>
+            <element signature="e#242#260#0" expanded="true" />
+            <marker date="1488440982000" expanded="false" signature="1242:1367" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simple_parse.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding>
             <element signature="e#635#653#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dump.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#253#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hashtable.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jansson_private.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#258#277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

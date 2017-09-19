@@ -24,8 +24,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <jansson.h>
 #include <string.h>
+#include "jansson.h"
 
 /* forward refs */
 void print_json(json_t *root);
