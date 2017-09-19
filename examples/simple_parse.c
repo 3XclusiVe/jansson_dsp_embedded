@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <jansson.h>
+#include <string.h>
 
 /* forward refs */
 void print_json(json_t *root);
@@ -177,9 +178,67 @@ char *read_line(char *line, int max_chars) {
  * main
  */
 
-#define MAX_CHARS 4096
+#define MAX_CHARS 104096
 
 int main(int argc, char *argv[]) {
+
+
+    char* text = "{\"user\":{\"OTPUT_DATA_RATE\":{\"value\":250,\"type\":\"float\",\"access_mode\":\"readonly\",\"description\":{\"rus\":\"Выходная частота, Гц\",\"eng\":\"Output frequency, Hz\",\"ger\":\"Ausgangsfrequenz, Hz\"},\"maximum\":1000,\"minimum\":50,\"multipleOf\":50},\"name\":{\"value\":\"Alstom\",\"type\":\"string\",\"access_mode\":\"readonly\",\"description\":{\"rus\":\"Идентификатор пользователя\",\"eng\":\"User ID\",\"ger\":\"Benutzer-ID\"}},\"CAN_1mbts\":{\"value\":1,\"type\":\"bool\",\"access_mode\":\"readonly\",\"description\":{\"rus\":\"Скоростной CAN\",\"eng\":\"High speed CAN\",\"ger\":\"Hochgeschwindigkeits-CAN\"}}}}";
+
+    json_error_t error;
+    json_t*  root;
+
+    root = json_loads(text, 0, &error);
+    //free(text);
+
+    if(!root)
+    {
+        fprintf(stderr, "error: on line %d: %s\n", error.line, error.text);
+        return 1;
+    }
+
+
+    if(!json_is_object(root))
+    {
+        fprintf(stderr, "error: root is not an object\n");
+        json_decref(root);
+        return 1;
+    }
+    json_t* user;
+    user = json_object_get(root, "user");
+    if(!json_is_object(user)) {
+        fprintf(stderr, " is not a object\n");
+        json_decref(root);
+        return 1;
+    }
+
+    json_t* OTPUT_DATA_RATE;
+    OTPUT_DATA_RATE = json_object_get(user, "OTPUT_DATA_RATE");
+    if(!json_is_object(OTPUT_DATA_RATE)) {
+        fprintf(stderr, "OTPUT_DATA_RATE is not a object\n");
+        json_decref(root);
+        return 1;
+    }
+
+    json_t* value;
+    value = json_object_get(OTPUT_DATA_RATE, "value");
+    if(!json_is_integer(value))
+    {
+        fprintf(stderr, "is not a int\n");
+        json_decref(root);
+        return 1;
+    }
+    printf("%i", (int)json_integer_value(value));
+
+
+
+    /**
+    if(!root)
+    {
+        fprintf(stderr, "error: on line %d: %s\n", error.line, error.text);
+        return 1;
+    }
+
     char line[MAX_CHARS];
 
     if (argc != 1) {
@@ -189,15 +248,15 @@ int main(int argc, char *argv[]) {
 
     while (read_line(line, MAX_CHARS) != (char *)NULL) {
 
-        /* parse text into JSON structure */
         json_t *root = load_json(line);
 
         if (root) {
-            /* print and release the JSON structure */
+
             print_json(root);
             json_decref(root);
         }
     }
+**/
 
     return 0;
 }
