@@ -28,23 +28,7 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecdd3bc5-d293-4f6f-ad9b-e4825bd29e48" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Android.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CHANGES" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CleanSpec.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Makefile.am" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/appveyor.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configure.ac" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jansson.pc.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/release.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Makefile.am" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jansson.def" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jansson_config.h.in" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simple_parse.c" afterPath="$PROJECT_DIR$/src/simple_parse.c" />
-    </list>
+    <list default="true" id="ecdd3bc5-d293-4f6f-ad9b-e4825bd29e48" name="Default" comment="" />
     <ignored path="jansson-2.10.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,11 +71,9 @@
       <file leaf-file-name="simple_parse.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/simple_parse.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-              <folding>
-                <element signature="e#635#653#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -589,9 +571,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#635#653#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -703,11 +683,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/simple_parse.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-          <folding>
-            <element signature="e#635#653#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
