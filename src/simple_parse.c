@@ -182,6 +182,7 @@ char *read_line(char *line, int max_chars) {
 
 int main(int argc, char *argv[]) {
 
+    /**
 
     char* text = "{\"user\":{\"OTPUT_DATA_RATE\":{\"value\":250,\"type\":\"float\",\"access_mode\":\"readonly\",\"description\":{\"rus\":\"Выходная частота, Гц\",\"eng\":\"Output frequency, Hz\",\"ger\":\"Ausgangsfrequenz, Hz\"},\"maximum\":1000,\"minimum\":50,\"multipleOf\":50},\"name\":{\"value\":\"Alstom\",\"type\":\"string\",\"access_mode\":\"readonly\",\"description\":{\"rus\":\"Идентификатор пользователя\",\"eng\":\"User ID\",\"ger\":\"Benutzer-ID\"}},\"CAN_1mbts\":{\"value\":1,\"type\":\"bool\",\"access_mode\":\"readonly\",\"description\":{\"rus\":\"Скоростной CAN\",\"eng\":\"High speed CAN\",\"ger\":\"Hochgeschwindigkeits-CAN\"}}}}";
 
@@ -232,13 +233,13 @@ int main(int argc, char *argv[]) {
 
 
 
-    /**
+
     if(!root)
     {
         fprintf(stderr, "error: on line %d: %s\n", error.line, error.text);
         return 1;
     }
-
+**/
     char line[MAX_CHARS];
 
     if (argc != 1) {
@@ -256,7 +257,7 @@ int main(int argc, char *argv[]) {
             json_decref(root);
         }
     }
-**/
+
 
     return 0;
 }
